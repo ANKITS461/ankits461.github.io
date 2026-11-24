@@ -1,0 +1,5 @@
+1. on the cmd, type ipconfig, note down the ipv4 address
+
+2. python -m http.server 80 --bind 10.12.1.84
+
+3.on admin based cmd type "netsh advfirewall firewall add rule name="Python Portfolio 8080" dir=in action=allow protocol=TCP localport=8080  "
