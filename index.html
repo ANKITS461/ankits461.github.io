@@ -3,97 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio & Achievements</title>
+    <meta name="description" content="Portfolio of Ankit Singh, research scholar in intelligent control and autonomous aerial robotics.">
+    <title>Ankit Singh | Robotics Research</title>
     <style>
-        body { font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #222; background: #f9f9fb; }
-        header { border-bottom: 2px solid #e1e4e8; padding-bottom: 20px; margin-bottom: 30px; }
-        h1 { margin: 0; color: #0366d6; }
-        .status { display: inline-block; background: #28a745; color: white; font-size: 0.8rem; padding: 3px 10px; border-radius: 12px; margin-top: 8px; }
-        section { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 20px; }
-        h2 { margin-top: 0; color: #24292e; border-bottom: 1px solid #eee; padding-bottom: 8px; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 10px; }
+        :root {
+            --primary: #0366d6;
+            --text: #24292e;
+            --muted: #586069;
+            --surface: #ffffff;
+            --background: #f6f8fa;
+            --border: #e1e4e8;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: var(--text);
+            background: var(--background);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.65;
+        }
+
+        header {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--border);
+        }
+
+        h1 {
+            margin: 0;
+            color: var(--primary);
+        }
+
+        h2 {
+            margin-top: 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #eee;
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 24px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+        }
+
+        .subtitle {
+            margin: 4px 0 8px;
+            color: var(--muted);
+        }
+
+        .status {
+            display: inline-block;
+            padding: 3px 10px;
+            color: white;
+            background: #28a745;
+            border-radius: 12px;
+            font-size: 0.85rem;
+        }
+
+        ul {
+            margin-bottom: 0;
+            padding-left: 20px;
+        }
+
+        li + li {
+            margin-top: 10px;
+        }
+
+        a {
+            color: var(--primary);
+        }
+
+        footer {
+            padding: 20px 0;
+            color: var(--muted);
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                margin: 20px auto;
+                padding: 0 12px;
+            }
+
+            section {
+                padding: 18px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>ANKIT SINGH</h1>
-        <p>Research Scholar | Electrical Engineering Department </p>
-        <span class="status">● Lab System Online</span>
+        <h1>Ankit Singh</h1>
+        <p class="subtitle">PhD Research Scholar · Intelligent Control and Autonomous Aerial Robotics</p>
+        <span class="status">Lab System Online</span>
     </header>
 
-    <section>
-        <h2>About Me</h2>
-        <p><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio & Achievements</title>
-    <style>
-        body { font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #222; background: #f9f9fb; }
-        header { border-bottom: 2px solid #e1e4e8; padding-bottom: 20px; margin-bottom: 30px; }
-        h1 { margin: 0; color: #0366d6; }
-        .status { display: inline-block; background: #28a745; color: white; font-size: 0.8rem; padding: 3px 10px; border-radius: 12px; margin-top: 8px; }
-        section { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 20px; }
-        h2 { margin-top: 0; color: #24292e; border-bottom: 1px solid #eee; padding-bottom: 8px; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 10px; }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>ANKIT SINGH</h1>
-        <p>Research Scholar| Electrical Engineering Department</p>
-        <span class="status">● Online</span>
-    </header>
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>
+                I am a PhD research scholar at IIT Roorkee, working in intelligent
+                control and autonomous aerial robotics. My research interests include
+                AI-based control systems, autonomous UAV navigation, dynamic obstacle
+                avoidance, and optimization algorithms.
+            </p>
+            <p>
+                My work lies at the intersection of control systems, robotics,
+                artificial intelligence, and optimization, with the goal of developing
+                reliable algorithms for autonomous quadrotor UAVs operating in dynamic
+                and uncertain environments.
+            </p>
+        </section>
 
-    <section>
-        <h2>About Me</h2>
-        <p>I am a PhD research scholar at IIT Roorkee, working in the area of Intelligent Control and Autonomous Aerial Robotics, with a particular focus on AI-based control systems, autonomous UAV navigation, and dynamic obstacle avoidance.
+        <section>
+            <h2>Research &amp; Projects</h2>
+            <ul>
+                <li>
+                    <strong>Autonomous UAV Navigation:</strong>
+                    Developing navigation and obstacle-avoidance strategies for
+                    dynamic environments.
+                </li>
+                <li>
+                    <strong>Intelligent Control:</strong>
+                    Investigating AI-based control approaches for aerial robotic systems.
+                </li>
+            </ul>
+        </section>
 
-My academic interests lie at the intersection of control systems, robotics, artificial intelligence, and optimization algorithms. My background and coursework have provided me with an understanding of mathematical modelling, system dynamics, state-space representation, stability analysis, robot kinematics and dynamics, and intelligent control techniques such as fuzzy logic, neural networks, and adaptive control.
+        <section>
+            <h2>Achievements &amp; Publications</h2>
+            <ul>
+                <li>List a verified publication with its title, venue, year, and link.</li>
+                <li>List a research award or other meaningful achievement with supporting details.</li>
+            </ul>
+        </section>
+    </main>
 
-My current research focuses on autonomous drone navigation and dynamic obstacle avoidance. I am particularly interested in developing and evaluating algorithms that enable quadrotor UAVs to navigate safely in environments containing static and moving obstacles while maintaining trajectory tracking and system stability.</p>
-    </section>
-<!--
-    <section>
-        <h2>Projects & Work</h2>
-        <ul>
-            <li><strong>Project Title 1:</strong> Short description of what you built, tools used, and outcomes.</li>
-            <li><strong>Project Title 2:</strong> Short description of your second major project.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Achievements & Publications</h2>
-        <ul>
-            <li><strong>2026:</strong> Published paper on [Topic] at [Conference/Journal].</li>
-            <li><strong>2025:</strong> Winner of [Hackathon / Award Name].</li>
-        </ul>
-    </section>
-</body>
-</html>, academic background, and current lab work.</p>
-    </section>
-
-
-   <section>
-        <h2>Projects & Work</h2>
-        <ul>
-            <li><strong>Project Title 1:</strong> Short description of what you built, tools used, and outcomes.</li>
-            <li><strong>Project Title 2:</strong> Short description of your second major project.</li>
-        </ul>
-    </section>
-
-
-    <!section>
-        <h2>Achievements & Publications</h2>
-        <ul>
-            <li><strong>2026:</strong> Published paper on [Topic] at [Conference/Journal].</li>
-            <li><strong>2025:</strong> Winner of [Hackathon / Award Name].</li>
-        </ul>
-    </section>
--->
-
+    <footer>
+        © 2026 Ankit Singh
+    </footer>
 </body>
 </html>
